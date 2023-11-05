@@ -24,6 +24,8 @@ Uniswap V2 Periphery 是 Uniswap V2 协议中与 core 合约配套使用的一�
 
 * [UniswapV2Library.sol](https://github.com/Louis-XWB/uniswap-v2-periphery/blob/master/contracts/libraries/UniswapV2Library.sol) - 提供了一系列用于与Uniswap V2合约交互的辅助函数
 
+* [UniswapV2Router02.sol](https://github.com/Louis-XWB/uniswap-v2-periphery/blob/master/contracts/UniswapV2Router02.sol) - 路由器的第二版实现，扩展了第一版（UniswapV2Router01）的功能。提供了与 V2 协议交互的接口，支持代币交换、添加流动性、移除流动性等操作。
+
 
 
 
