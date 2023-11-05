@@ -20,7 +20,9 @@ Uniswap V2 Periphery 是 Uniswap V2 协议中与 core 合约配套使用的一�
 
 ## Code Learning
 
-* [UniswapV2ERC20.sol](https://github.com/Louis-XWB/uniswap-v2-core/blob/master/contracts/UniswapV2ERC20.sol) - ERC20 合约，实现 ERC20 标准方法
+* [UniswapV2Migrator.sol](https://github.com/Louis-XWB/uniswap-v2-periphery/blob/master/contracts/UniswapV2Migrator.sol) - 负责将合约从V1迁移到V2
+
+
 
 ## FAQ
 
