@@ -22,6 +22,9 @@ Uniswap V2 Periphery 是 Uniswap V2 协议中与 core 合约配套使用的一�
 
 * [UniswapV2Migrator.sol](https://github.com/Louis-XWB/uniswap-v2-periphery/blob/master/contracts/UniswapV2Migrator.sol) - 负责将合约从V1迁移到V2
 
+* [UniswapV2Library.sol](https://github.com/Louis-XWB/uniswap-v2-periphery/blob/master/contracts/libraries/UniswapV2Library.sol) - 提供了一系列用于与Uniswap V2合约交互的辅助函数
+
+
 
 
 ## FAQ
