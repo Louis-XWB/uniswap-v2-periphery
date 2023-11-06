@@ -26,13 +26,24 @@ Uniswap V2 Periphery 是 Uniswap V2 协议中与 core 合约配套使用的一�
 
 * [UniswapV2Router02.sol](https://github.com/Louis-XWB/uniswap-v2-periphery/blob/master/contracts/UniswapV2Router02.sol) - 路由器的第二版实现，扩展了第一版（UniswapV2Router01）的功能。提供了与 V2 协议交互的接口，支持代币交换、添加流动性、移除流动性等操作。
 
+* [ExampleFlashSwap.sol](https://github.com/Louis-XWB/uniswap-v2-periphery/blob/master/contracts/examples/ExampleFlashSwap.sol) - 举例如何执行一个flash swap（闪电贷）操作。闪电贷允许用户借用任何数量的ERC-20代币，只要在交易结束时返还同等价值的代币即可。  
+
 
 
 
 ## FAQ
 
+1) 闪电互换的运作流程
 
+    闪电互换是DeFi中一种特殊类型的交易，允许用户借用任何数量的ERC-20代币，只要在交易结束时返还同等价值的代币即可。
 
+    闪电互换的运作流程如下：
+    
+    * **触发交易**： 用户或者智能合约开始一个闪电swap，通常是为了利用两个市场之间的价格差异进行套利、执行去中心化贷款或其他复杂的金融策略。
+    * **借入资产**： 用户从Uniswap的流动性池中借入代币（例如，如果他们预计该代币的价格会下降，或者他们可以在另一个市场上卖出更高价）。
+    * **执行策略**： 用户可以使用这些代币进行交易、套利或其他操作，而无需提供初始的资金。
+    * **还款和费用**： 在同一次交易中，用户必须返还等价值的借入代币加上一定的费用。通常，如果用户未能在单笔交易中返还资金，整个交易会被**回滚**。
+    
 
 ## Resources
 
